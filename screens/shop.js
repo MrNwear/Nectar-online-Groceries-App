@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Input } from 'react-native-elements';
 import { Card } from '../components/card';
 export const ShopScreen = () => {
+    useEffect(() => {
+        console.log('shop Mount');
+        return console.log('shop unmount');
+    }, []);
     return (
         <ScrollView style={styles.container} contentContainerStyle={{ alignItems: 'center' }} >
             <Image style={styles.imagestyle} source={require('../assets/orangeCarrot.png')} />
@@ -28,7 +32,7 @@ export const ShopScreen = () => {
                 <Text style={{ fontWeight: '700', color: '#000', marginLeft: 10 }}>Exclusive Offer</Text>
                 <TouchableOpacity style={{ width: '30%', marginRight: 5 }}><Text style={{ color: '#53B175' }}>Resend Code</Text></TouchableOpacity>
             </View>
-            <ScrollView horizontal nestedScrollEnabled style={{ height: 500, flex: 1 }}>
+            <ScrollView horizontal nestedScrollEnabled style={{ flex: 1 }}>
 
                 <Card title='Apple' source={require('../assets/apple.png')} />
                 <Card title='Carrot' source={require('../assets/orangeCarrot.png')} />
