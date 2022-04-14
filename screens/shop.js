@@ -24,13 +24,42 @@ export const ShopScreen = () => {
                     />
                 }
                 autoFocus={false}
-
                 inputContainerStyle={{ height: 30, width: '90%', borderRadius: 10, borderWidth: 1, paddingLeft: 5, marginTop: 10, alignSelf: 'center' }}
             />
             <Image source={require('../assets/freshVegetables.png')} style={{ width: '90%', resizeMode: 'contain' }} />
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '100%' }}>
                 <Text style={{ fontWeight: '700', color: '#000', marginLeft: 10 }}>Exclusive Offer</Text>
-                <TouchableOpacity style={{ width: '30%', marginRight: 5 }}><Text style={{ color: '#53B175' }}>Resend Code</Text></TouchableOpacity>
+                <TouchableOpacity style={{ width: '30%', marginRight: 5 }}><Text style={{ color: '#53B175' }}>see all</Text></TouchableOpacity>
+            </View>
+            <ScrollView horizontal nestedScrollEnabled style={{ flex: 1 }}>
+
+                <Card title='Apple' source={require('../assets/apple.png')} />
+                <Card title='Carrot' source={require('../assets/orangeCarrot.png')} />
+                <Card title='Apple' source={require('../assets/apple.png')} />
+                <Card title='Carrot' source={require('../assets/orangeCarrot.png')} />
+                <Card title='Apple' source={require('../assets/apple.png')} />
+                <Card title='Carrot' source={require('../assets/orangeCarrot.png')} />
+                <Card title='Apple' source={require('../assets/apple.png')} />
+                <Card title='Carrot' source={require('../assets/orangeCarrot.png')} />
+            </ScrollView>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '100%' }}>
+                <Text style={{ fontWeight: '700', color: '#000', marginLeft: 10 }}>Best Selling</Text>
+                <TouchableOpacity style={{ width: '30%', marginRight: 5 }}><Text style={{ color: '#53B175' }}>see all</Text></TouchableOpacity>
+            </View>
+            <ScrollView horizontal nestedScrollEnabled style={{ flex: 1 }}>
+
+                <Card title='Apple' source={require('../assets/apple.png')} />
+                <Card title='Carrot' source={require('../assets/orangeCarrot.png')} />
+                <Card title='Apple' source={require('../assets/apple.png')} />
+                <Card title='Carrot' source={require('../assets/orangeCarrot.png')} />
+                <Card title='Apple' source={require('../assets/apple.png')} />
+                <Card title='Carrot' source={require('../assets/orangeCarrot.png')} />
+                <Card title='Apple' source={require('../assets/apple.png')} />
+                <Card title='Carrot' source={require('../assets/orangeCarrot.png')} />
+            </ScrollView>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '100%' }}>
+                <Text style={{ fontWeight: '700', color: '#000', marginLeft: 10 }}>Groceries</Text>
+                <TouchableOpacity style={{ width: '30%', marginRight: 5 }}><Text style={{ color: '#53B175' }}>see all</Text></TouchableOpacity>
             </View>
             <ScrollView horizontal nestedScrollEnabled style={{ flex: 1 }}>
 
