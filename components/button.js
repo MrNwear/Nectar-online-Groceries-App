@@ -18,11 +18,11 @@ export class MainButton extends React.Component {
 }
 */
 export const MainButton = (props) => {
-    const { title, style, onpress, txtstyle } = props;
+    const { title, style, onpress, txtStyle } = props;
 
     return (
         <TouchableOpacity style={[styles.buttonStyle, style]} onPress={onpress}>
-            <Text style={[{ color: '#1F7FE5', fontSize: 18 }, txtstyle]}>{title}</Text>
+            <Text style={[{ color: '#1F7FE5', fontSize: 18 }, txtStyle]}>{title}</Text>
         </TouchableOpacity>
     )
 }

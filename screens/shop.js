@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView } from 'rea
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Input } from 'react-native-elements';
 import { Card } from '../components/card';
+
 export const ShopScreen = () => {
     useEffect(() => {
         console.log('shop Mount');
